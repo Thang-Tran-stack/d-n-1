@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="JDM Car - Dịch vụ chăm sóc và nâng cấp xe hơi phong cách JDM chuyên nghiệp">
+  <title>JDM Car - Yêu Xe Như Yêu Vợ Bạn</title>
+  
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== HEADER & NAVIGATION ==================== -->
+  <header id="header" class="site-header">
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <!-- Logo -->
+        <a href="#hero" class="logo" id="site-logo">
+          <span class="logo-accent">JDM</span> Car
+        </a>
+
+        <!-- Navigation Menu -->
+        <ul class="nav-menu" id="nav-menu">
+          <li class="nav-item"><a href="#hero" class="nav-link active">Trang chủ</a></li>
+          <li class="nav-item"><a href="#brands" class="nav-link">Hãng xe</a></li>
+          <li class="nav-item"><a href="#services" class="nav-link">Sản phẩm & Dịch vụ</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Liên hệ</a></li>
+        </ul>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ==================== MAIN CONTENT ==================== -->
+  <main id="main-content">
+
+    <!-- 3.2 Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">Yêu Xe Như Yêu Vợ Bạn</h1>
+        <p class="hero-subtitle">Dịch vụ chăm sóc và nâng cấp xe phong cách JDM chuyên nghiệp</p>
+        
+        <!-- Search Bar -->
+        <div class="hero-search-box" id="car-search-box">
+          <form class="search-form" id="search-form" onsubmit="return false;">
+            <div class="search-group">
+              <i class="fas fa-car search-icon"></i>
+              <input type="text" id="search-name" placeholder="Tên dòng xe (e.g. Supra, RX-7)..." aria-label="Tên dòng xe">
+            </div>
+            <div class="search-group">
+              <i class="fas fa-flag search-icon"></i>
+              <select id="search-brand" aria-label="Hãng xe">
+                <option value="">Chọn hãng xe</option>
+                <option value="toyota">Toyota</option>
+                <option value="nissan">Nissan</option>
+                <option value="honda">Honda</option>
+                <option value="mazda">Mazda</option>
+                <option value="subaru">Subaru</option>
+                <option value="mitsubishi">Mitsubishi</option>
+              </select>
+            </div>
+            <div class="search-group">
+              <i class="fas fa-tags search-icon"></i>
+              <select id="search-type" aria-label="Loại xe">
+                <option value="">Loại xe / Dịch vụ</option>
+                <option value="sedan">Sedan</option>
+                <option value="coupe">Coupe / Sport</option>
+                <option value="suv">SUV</option>
+                <option value="tuning">Gói độ xe JDM</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-search" id="btn-search">
+              <i class="fas fa-magnifying-glass"></i> Tìm kiếm
+            </button>
+          </form>
+        </div>
+
+        <!-- CTA Button -->
+        <div class="hero-actions">
+          <a href="#services" class="btn btn-primary btn-cta" id="btn-explore">
+            Khám phá ngay <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3.3 Services Section -->
+    <section id="services" class="services-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Dịch Vụ Hàng Đầu</span>
+          <h2 class="section-title">Dịch Vụ Chăm Sóc & Độ Xe JDM</h2>
+          <p class="section-desc">Đem lại vẻ đẹp hoàn mỹ và hiệu năng đỉnh cao cho xế cưng của bạn</p>
+        </div>
+
+        <div class="cards-grid">
+          <!-- Card 1: Rửa Xe -->
+          <article class="service-card" id="card-car-wash">
+            <div class="card-icon-wrapper">
+              <i class="fas fa-soap card-icon"></i>
+            </div>
+            <h3 class="card-title">Rửa Xe Chi Tiết</h3>
+            <p class="card-text">
+              Quy trình rửa xe chuẩn quốc tế với dung dịch cao cấp, làm sạch từng chi tiết khoang máy và gầm bệ an toàn tuyệt đối.
+            </p>
+          </article>
+
+          <!-- Card 2: Dán Film Cách Nhiệt -->
+          <article class="service-card" id="card-tinting">
+            <div class="card-icon-wrapper">
+              <i class="fas fa-shield-halved card-icon"></i>
+            </div>
+            <h3 class="card-title">Dán Film Cách Nhiệt</h3>
+            <p class="card-text">
+              Chống tia UV đến 99%, cách nhiệt vượt trội, bảo vệ nội thất và đảm bảo sự riêng tư, sang trọng cho không gian lái.
+            </p>
+          </article>
+
+          <!-- Card 3: Độ Đèn -->
+          <article class="service-card" id="card-lighting">
+            <div class="card-icon-wrapper">
+              <i class="fas fa-bolt-lightning card-icon"></i>
+            </div>
+            <h3 class="card-title">Độ Đèn Tăng Sáng</h3>
+            <p class="card-text">
+              Nâng cấp hệ thống Bi-LED / Laser cao cấp, ánh sáng bám đường chuẩn phong cách JDM, an toàn trong mọi điều kiện thời tiết.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer id="contact" class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-grid">
+        <!-- Logo & About -->
+        <div class="footer-col footer-about">
+          <a href="#hero" class="footer-logo">
+            <span class="logo-accent">JDM</span> Car
+          </a>
+          <p class="footer-bio">
+            Chuyên cung cấp dịch vụ chăm sóc, bảo dưỡng và nâng cấp xe hơi phong cách JDM chuẩn chất lượng hàng đầu.
+          </p>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-col footer-contact">
+          <h4 class="footer-heading">Thông Tin Liên Hệ</h4>
+          <ul class="contact-list">
+            <li>
+              <i class="fas fa-location-dot"></i>
+              <span>123 Đường JDM, Quận Cầu Giấy, Hà Nội</span>
+            </li>
+            <li>
+              <i class="fas fa-phone"></i>
+              <a href="tel:0987654321">0987 654 321</a>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:contact@jdmcar.vn">contact@jdmcar.vn</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="footer-col footer-social">
+          <h4 class="footer-heading">Mạng Xã Hội</h4>
+          <p>Theo dõi chúng tôi để cập nhật những bản độ mới nhất:</p>
+          <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="TikTok">
+              <i class="fab fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 <strong>JDM Car</strong>. Tất cả quyền được bảo lưu (Copyright).</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
